@@ -45,9 +45,9 @@ func NewCmd(platform string, packageName string, initiate bool) (cmd *exec.Cmd, 
 	args = append(args, subCmd)
 
 	// path to store metadata
-	s := []string{tmpPath, strings.ToLower(platform), packageName}
-	metaPath := strings.Join(s, "/")
-	createFilePaths(metaPath)
+	// s := []string{tmpPath, strings.ToLower(platform), packageName}
+	// metaPath := strings.Join(s, "/")
+	// createFilePaths(metaPath)
 
 	if initiate {
 		args = append(args, initCmd)
@@ -59,7 +59,7 @@ func NewCmd(platform string, packageName string, initiate bool) (cmd *exec.Cmd, 
 	}
 
 	// change work dir
-	cmd.Dir = metaPath
+	// cmd.Dir = metaPath
 
 	// set cmd env
 	// cmd.Env = append(os.Environ(),

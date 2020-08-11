@@ -15,9 +15,9 @@ const (
 var (
 	exeCmd    = "fastlane"
 	subCmdRef = map[string]string{
-		"ANDROID": "supply",
-		"IOS":     "deliver",
-		"MAC":     "deliver",
+		"GOOGLEPLAY": "supply",
+		"APPCONNECT": "deliver",
+		// "MAC":     "deliver",
 	}
 	initCmd = "init"
 )
